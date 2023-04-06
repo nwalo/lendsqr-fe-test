@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap");
+
+.login {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  h3 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 10px 0 !important;
+    line-height: 50px;
+    color: #213f7d;
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+      margin: 0;
+      line-height: 30px;
+    }
+  }
+
+  &__left {
+    width: 50%;
+    padding: 5%;
+    padding-right: 2.5%;
+
+    &__center {
+      width: 100%;
+      background-repeat: no-repeat;
+      justify-content: center;
+      align-items: center;
+
+      &__image {
+        margin: 80px 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__right {
+    padding: 5%;
+    width: 50%;
+    display: flex;
+    padding-left: 2.5%;
+    align-items: center;
+    > div {
+      width: 100%;
+    }
+    &__form {
+      margin: 5 0 0;
+      width: 100%;
+
+      &__input {
+        width: 95%;
+        width: -webkit-fill-available;
+        border: 2px solid rgba(84, 95, 125, 0.15);
+        border-radius: 5px;
+        padding: 1em;
+        color: #545f7d;
+        outline: none;
+
+        &__input-box {
+          margin: 30px 0 0;
+          position: relative;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    &__logo {
+      width: 100px;
+    }
+
+    &__left {
+      width: 90%;
+      padding-right: 5%;
+      padding-bottom: 0;
+
+      &__center {
+        width: 100%;
+
+        &__image {
+          margin: 20px 30px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &__right {
+      padding: 5%;
+      width: 100%;
+
+      > div {
+        width: 100%;
+      }
+      &__form {
+        margin: 5px 0 0;
+        width: 100%;
+
+        &__input {
+          width: 95%;
+          width: -webkit-fill-available;
+          border: 2px solid rgba(84, 95, 125, 0.15);
+          border-radius: 5px;
+          padding: 1em;
+          color: #545f7d;
+          outline: none;
+
+          &__input-box {
+            margin: 30px 0 0;
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 90%;
+        // padding-top: 0;
+      }
+    }
+  }
+}
+
+// body {
+//   overflow: hidden;
+// }
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #545f7d;
+
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+  }
+}
+
+h6 {
+  font-weight: 400;
+  margin: 20px 0;
+  font-size: 0.8rem;
+  color: #39cdcc;
+}
+
+.btn {
+  padding: 10px;
+  margin: 0px 0;
+  outline: none;
+  border: 1px solid #39cdcc;
+
+  &__block {
+    width: 100%;
+    background-color: #39cdcc;
+    color: #ffffff;
+  }
+}

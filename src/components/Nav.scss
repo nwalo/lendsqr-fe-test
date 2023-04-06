@@ -1,0 +1,138 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 3px 0 20px 0 rgba(84, 95, 125, 0.25);
+
+  &__logo {
+    width: 100px;
+  }
+
+  &__bar {
+    padding: 10px 30px;
+  }
+
+  &__search {
+    min-width: 300px;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+    color: #545f7d;
+    outline: none;
+  }
+
+  &__search-btn {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 0 20px;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 0 5px 5px 0;
+    background-color: #39cdcc;
+    outline: none;
+  }
+
+  &__item {
+    margin-right: 20px;
+    position: relative;
+  }
+
+  &__j-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__a-center {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    // font-size: 2em;
+    color: #39cdcc;
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    // display: none;
+    &__j-between {
+      display: flex;
+      flex-direction: column;
+      // justify-content: ;
+    }
+
+    &__search {
+      min-width: 300px;
+      max-width: 400px;
+      display: none;
+    }
+    &__search-btn {
+      display: none;
+    }
+
+    &__item {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    &__menu {
+      //   font-size: 1.5em;
+      display: block;
+      color: #39cdcc;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &__a-center {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__bell {
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+
+    &__full {
+      width: 100%;
+      display: flex;
+    }
+  }
+}
+
+.show {
+  &__mobile {
+    display: none;
+  }
+  &__desk {
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    &__mobile {
+      display: block;
+    }
+    &__desk {
+      display: none;
+    }
+  }
+}
+
+.hide {
+  &__mobile {
+    display: none;
+  }
+  &__desk {
+    display: none;
+  }
+}
