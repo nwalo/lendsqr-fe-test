@@ -92,7 +92,7 @@
         }
 
         img {
-          width: 100%;
+          width: 90%;
         }
       }
     }
@@ -127,15 +127,11 @@
 
       @media (max-width: 768px) {
         width: 90%;
-        // padding-top: 0;
+        padding-top: 0;
       }
     }
   }
 }
-
-// body {
-//   overflow: hidden;
-// }
 
 h2,
 h3,
@@ -168,10 +164,17 @@ h6 {
   margin: 0px 0;
   outline: none;
   border: 1px solid #39cdcc;
+  cursor: pointer;
 
   &__block {
     width: 100%;
     background-color: #39cdcc;
     color: #ffffff;
   }
+}
+
+.err {
+  font-family: "Work Sans";
+  font-size: 14px;
+  color: red;
 }

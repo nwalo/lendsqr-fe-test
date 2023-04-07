@@ -47,8 +47,8 @@ const SideNav = ({ children }: Props) => {
           <div className="side__bar__sub-heading__container">
             <span className="side__bar__sub-heading">CUSTOMERS</span>
           </div>
-          <div className="side__bar__title__container">
-            <Link to="/" className="link">
+          <div className="side__bar__title__container link__active">
+            <Link to="/" className="link ">
               <img src={Guarantors} className="side__bar__image " alt="" />
               <span className="side__bar__title">Users</span>
             </Link>

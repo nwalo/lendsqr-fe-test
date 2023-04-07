@@ -4,9 +4,10 @@ import "./Badge.scss";
 type Props = {
   createdAt: string;
   lastActiveDate: string;
+  userstatus: string;
 };
 
-const Badge = ({ createdAt, lastActiveDate }: Props) => {
+const Badge = ({ createdAt, lastActiveDate, userstatus }: Props) => {
   let c = new Date(createdAt).getMilliseconds();
   let l = new Date(lastActiveDate).getMilliseconds();
   let status = "active";
@@ -23,8 +24,10 @@ const Badge = ({ createdAt, lastActiveDate }: Props) => {
 
   return (
     <div className="badge">
-      <div className={`badge__status badge__${status}`}>
-        <div>{status}</div>
+      <div
+        className={`badge__status badge__${userstatus ? userstatus : status}`}
+      >
+        <div>{userstatus ? userstatus : status}</div>
       </div>
     </div>
   );

@@ -1,0 +1,160 @@
+.users {
+  font-family: "Work Sans";
+  &__back {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #545f7d;
+  }
+
+  &__active-status {
+    background: #ffffff;
+    color: #39cdcc;
+    outline: none;
+    border: 1px solid #39cdcc;
+    margin: 0 20px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: #39cdcc;
+      color: #ffffff;
+    }
+  }
+
+  &__blacklist-status {
+    background: #ffffff;
+    color: #e4033b;
+    outline: none;
+    border: 1px solid #e4033b;
+    margin: 0 20px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: #e4033b;
+      color: #ffffff;
+    }
+  }
+
+  &__details {
+    padding: 10px;
+    display: flex;
+    // justify-content: space-between;
+
+    &__line {
+      border-left: 1px solid #a6a9b3;
+      border-right: 1px solid #a6a9b3;
+    }
+
+    &__item {
+      margin: 20px 0 40px;
+      padding: 0 30px;
+
+      &__heading {
+        color: #545f7d;
+        font-family: Work Sans;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+
+      &__small {
+        font-family: Work Sans;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+
+  &__tab {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    div {
+      padding: 10px 20px;
+    }
+
+    &__header {
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid #39cdcc;
+        color: #39cdcc;
+      }
+
+      &__active {
+        border-bottom: 1px solid #39cdcc;
+        color: #39cdcc;
+      }
+    }
+
+    &__active {
+      border-bottom: 1px solid #39cdcc;
+      color: #39cdcc;
+    }
+
+    &__body {
+      width: 90%;
+      margin: 20px auto;
+
+      &__heading {
+        color: #213f7d;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      &__items {
+        width: 19%;
+        margin: 20px 0px 30px;
+        overflow-wrap: break-word;
+      }
+
+      &__title {
+        color: #545f7d;
+        font-family: Work Sans;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 5px 0;
+      }
+
+      &__value {
+        color: #213f7d;
+        font-family: Work Sans;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px 0;
+      }
+
+      @media (max-width: 768px) {
+        &__items {
+          width: 33%;
+          margin: 20px 0px 30px;
+          overflow-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+.j-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}

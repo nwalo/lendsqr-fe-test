@@ -9,14 +9,19 @@
     box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     width: 100%;
+    overflow: auto;
     // height: 400px;
     margin: 40px 0;
+
+    @media (max-width: 900px) {
+      width: 100vw;
+    }
 
     table {
       padding: 20px;
       border-collapse: collapse;
-      width: 95%;
-      margin: 20px auto;
+      width: 120%;
+      margin: 20px;
       color: #545f7d;
     }
 
@@ -51,6 +56,13 @@
 
     td {
       padding: 10px 0;
+
+      // max-width: 100px !important;
+      // word-wrap: break-word;
+      // @media (max-width: 768px) {
+      //   width: 100px !important;
+      //   word-wrap: break-word;
+      // }
     }
   }
 }

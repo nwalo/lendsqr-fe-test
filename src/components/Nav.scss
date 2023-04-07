@@ -8,6 +8,7 @@ ul {
   position: fixed;
   z-index: 1;
   width: 100%;
+  max-width: 100%;
   background-color: #ffffff;
   box-shadow: 3px 0 20px 0 rgba(84, 95, 125, 0.25);
 
@@ -60,6 +61,11 @@ ul {
     display: none;
   }
 
+  &__full {
+    width: 100%;
+    display: flex;
+  }
+
   @media (max-width: 768px) {
     // display: none;
     &__j-between {
@@ -71,10 +77,10 @@ ul {
     &__search {
       min-width: 300px;
       max-width: 400px;
-      display: none;
+      // display: none;
     }
     &__search-btn {
-      display: none;
+      // display: none;
     }
 
     &__item {
